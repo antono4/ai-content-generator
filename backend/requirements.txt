@@ -24,7 +24,6 @@ alembic==1.13.1
 
 # Caching & Rate Limiting
 redis==5.0.1
-rate-limiter-flexible==4.5.0
 
 # Utilities
 python-dotenv==1.0.0
