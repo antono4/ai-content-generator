@@ -18,7 +18,7 @@
 
 ## 📖 Tentang
 
-Repository **`ai-content-generator`** adalah proyek perangkat lunak yang dibangun dengan HTML, CSS, JavaScript, Python, React.
+Repository **`ai-content-generator`** adalah proyek multi-bagian (monorepo) yang dibangun dengan HTML, CSS, JavaScript, Python, React.
 Demo berjalan tersedia melalui **GitHub Pages** di [`https://antono4.github.io/ai-content-generator/`](https://antono4.github.io/ai-content-generator/).
 
 ## 🗂️ Struktur Proyek
@@ -75,7 +75,16 @@ Berdasarkan ekstensi berkas yang terdeteksi di repository:
 
 ## 🚀 Menjalankan Secara Lokal
 
-Lihat berkas konfigurasi di repository ini untuk cara menjalankannya.
+Repo ini punya beberapa bagian (misalnya `backend/` dan `frontend/`);
+jalankan tiap bagian sesuai kebutuhan:
+
+```bash
+# bagian Python
+cd backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+
+# bagian Node
+cd frontend && npm install && npm run dev
+```
 
 ## 📬 Kontak
 
