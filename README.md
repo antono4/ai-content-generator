@@ -1,69 +1,46 @@
-<!-- README ini dihasilkan otomatis oleh .github/workflows/generate-readme.yml -->
-<!-- Jangan edit manual: perubahan akan ditimpa pada run berikutnya. -->
+<!-- README ini dihasilkan otomatis oleh workflow .github/workflows/generate-readme.yml -->
+<!-- Jangan edit manual; perubahan akan ditim pada run berikutnya. -->
 
-<h1 align="center">ai-content-generator 👋</h1>
+<h1 align="center">Project 👋</h1>
 
 <p align="center">
-  <em>🤖 AI-powered content generator for social media, blogs, and marketing - Built with FastAPI, LangChain, and modern AI models</em>
+  <strong></strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/antono4/ai-content-generator"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-antono4/ai-content-generator-blue?logo=github"></a>
   <a href="https://antono4.github.io/ai-content-generator/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Online-success?logo=githubpages"></a>
-  <img alt="Files" src="https://img.shields.io/badge/Files-34-informational">
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/antono4/ai-content-generator">
+  <img alt="Files" src="https://img.shields.io/badge/Files-37-informational">
+  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-09-18 06:18:39 WIB-lightgrey">
 </p>
 
 ---
 
 ## 📖 Tentang
 
-Repository **`ai-content-generator`** adalah proyek multi-bagian (monorepo) yang dibangun dengan HTML, CSS, JavaScript, Python, React.
-Demo berjalan tersedia melalui **GitHub Pages** di [`https://antono4.github.io/ai-content-generator/`](https://antono4.github.io/ai-content-generator/).
+Repository **`ai-content-generator`** adalah situs web pribadi / portofolio yang diterbitkan melalui **GitHub Pages**. Situs utama berada di [`https://antono4.github.io/ai-content-generator/`](https://antono4.github.io/ai-content-generator/).
 
 ## 🗂️ Struktur Proyek
 
 ```
 ai-content-generator/
-.github/
-  workflows/
-.gitignore
-LICENSE
-achievement_test.md
-backend/
-  .env.example
-  Dockerfile
-  __init__.py
-  api/
-  models/
-  requirements.txt
-  services/
-docker-compose.yml
-frontend/
-  .env.example
-  Dockerfile
-  index.html
-  package.json
-  postcss.config.js
-  public/
-  src/
-  tailwind.config.js
-  tsconfig.json
-  tsconfig.node.json
-  vite.config.ts
+├── index.html          # Halaman utama (landing / portofolio)
+├── assets/             # Aset statis (css, js, img, vendor)
+├── forms/               # Form handler (PHP)
+└── frontend/              # AI Content Generator | Generate Content with AI  ->  https://antono4.github.io/ai-content-generator/frontend/
 ```
 
 ## 🌐 Sub-Proyek / Demo
 
-Repository ini juga memuat sub-proyek (masing-masing punya `index.html` tersendiri):
+Situs ini juga memuat beberapa sub-proyek (masing-masing punya `index.html` tersendiri):
 
-| Folder | Keterangan |
-|--------|-----------|
-| [`frontend`](./frontend) | AI Content Generator | Generate Content with AI |
+| Folder | Demo Live | Keterangan |
+|--------|-----------|-----------|
+| [`frontend`](./frontend) | [https://antono4.github.io/ai-content-generator/frontend/](https://antono4.github.io/ai-content-generator/frontend/) | AI Content Generator | Generate Content with AI |
 
 ## 🛠️ Teknologi
 
-Berdasarkan ekstensi berkas yang terdeteksi di repository:
+Berdasarkan isi repository, proyek ini menggunakan:
 
 - `HTML`
 - `CSS`
@@ -71,29 +48,30 @@ Berdasarkan ekstensi berkas yang terdeteksi di repository:
 - `Python`
 - `React`
 
-> Total **34 berkas** di repository (di luar `.git`, `node_modules`, `dist`, dan `build`).
+> Total **37 file** terdeteksi di repository.
 
 ## 🚀 Menjalankan Secara Lokal
 
-Repo ini punya beberapa bagian (misalnya `backend/` dan `frontend/`);
-jalankan tiap bagian sesuai kebutuhan:
+Karena ini situs statis (HTML/CSS/JS/PHP), cukup buka `index.html` di browser, atau jalankan server lokal:
 
 ```bash
-# bagian Python
-cd backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+# Tanpa dependency
+python3 -m http.server 8000
+# lalu buka http://localhost:8000
 
-# bagian Node
-cd frontend && npm install && npm run dev
+# atau dengan PHP (untuk form handler di forms/)
+php -S localhost:8000
 ```
 
 ## 📬 Kontak
 
 - GitHub: [antono4](https://github.com/antono4)
+- Situs: [https://antono4.github.io/ai-content-generator/](https://antono4.github.io/ai-content-generator/)
 
 ## 📄 Lisensi
 
-Proyek ini dilisensikan di bawah MIT License — lihat berkas [`LICENSE`](./LICENSE).
+Lihat berkas [`LICENSE`](./LICENSE) untuk informasi lisensi.
 
 ---
 
-<sub>README ini di-generate otomatis oleh GitHub Actions `.github/workflows/generate-readme.yml`.</sub>
+<sub>README ini di-generate otomatis pada **2026-09-18 06:18:39 WIB** oleh GitHub Actions `.github/workflows/generate-readme.yml`.</sub>
