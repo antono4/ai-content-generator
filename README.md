@@ -1,14 +1,3 @@
-# AI Content Generator
-
-**Next-Gen Generative Intelligence.**
-
-A professional-grade content automation engine leveraging state-of-the-art LLMs. This project focuses on prompt engineering and automated workflows to produce high-conversion digital content at scale.
-
-### 🚀 Key Highlights
-- Advanced LLM Integration
-- Dynamic Prompt Engineering
-- High-Conversion Content Workflows
-
 <!-- README ini dihasilkan otomatis oleh workflow .github/workflows/generate-readme.yml -->
 <!-- Jangan edit manual; perubahan akan ditim pada run berikutnya. -->
 
@@ -22,7 +11,7 @@ A professional-grade content automation engine leveraging state-of-the-art LLMs.
   <a href="https://github.com/antono4/ai-content-generator"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-antono4/ai-content-generator-blue?logo=github"></a>
   <a href="https://antono4.github.io/ai-content-generator/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Online-success?logo=githubpages"></a>
   <img alt="Files" src="https://img.shields.io/badge/Files-37-informational">
-  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-09-24 07:54:18 WIB-lightgrey">
+  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-09-24 11:14:55 WIB-lightgrey">
 </p>
 
 ---
@@ -85,4 +74,4 @@ Lihat berkas [`LICENSE`](./LICENSE) untuk informasi lisensi.
 
 ---
 
-<sub>README ini di-generate otomatis pada **2026-09-24 07:54:18 WIB** oleh GitHub Actions `.github/workflows/generate-readme.yml`.</sub>
+<sub>README ini di-generate otomatis pada **2026-09-24 11:14:55 WIB** oleh GitHub Actions `.github/workflows/generate-readme.yml`.</sub>
