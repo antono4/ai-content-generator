@@ -1,3 +1,14 @@
+# AI Content Generator
+
+**Next-Gen Generative Intelligence.**
+
+A professional-grade content automation engine leveraging state-of-the-art LLMs. This project focuses on prompt engineering and automated workflows to produce high-conversion digital content at scale.
+
+### 🚀 Key Highlights
+- Advanced LLM Integration
+- Dynamic Prompt Engineering
+- High-Conversion Content Workflows
+
 <!-- README ini dihasilkan otomatis oleh workflow .github/workflows/generate-readme.yml -->
 <!-- Jangan edit manual; perubahan akan ditim pada run berikutnya. -->
 
