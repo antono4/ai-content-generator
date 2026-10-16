@@ -126,9 +126,11 @@ app = create_app()
 
 if __name__ == "__main__":
     import uvicorn
+
+    _settings = get_settings()
     uvicorn.run(
         "api.main:app",
-        host=settings.HOST,
-        port=settings.PORT,
-        reload=settings.DEBUG
+        host=_settings.HOST,
+        port=_settings.PORT,
+        reload=_settings.DEBUG
     )

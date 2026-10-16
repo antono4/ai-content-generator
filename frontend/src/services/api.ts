@@ -223,7 +223,8 @@ export const getTemplates = async (): Promise<TemplateList> => {
 
 export const getHealth = async (): Promise<{ status: string; version: string }> => {
   try {
-    const response = await api.get('/api/v1/health');
+    // Health is served at the root, not under /api/v1.
+    const response = await api.get('/health');
     return response.data;
   } catch {
     return { status: 'error', version: 'unknown' };

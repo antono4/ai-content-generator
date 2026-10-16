@@ -13,7 +13,7 @@ on:
     paths:
       - '.github/workflows/generate-readme.yml'
       - 'index.html'
-      - 'README.md'
+      - 'README.generated.md'
   workflow_dispatch:
     inputs:
       force_regenerate:
@@ -226,10 +226,10 @@ jobs:
             echo "---"
             echo ""
             echo "<sub>README ini di-generate otomatis pada **${TIMESTAMP}** oleh GitHub Actions \`.github/workflows/generate-readme.yml\`.</sub>"
-          } > README.md
+          } > README.generated.md
 
           echo "=== Pratinjau README ==="
-          cat README.md
+          cat README.generated.md
 
       - name: Configure Git
         run: |
@@ -243,12 +243,12 @@ jobs:
           export TZ="Asia/Jakarta"
 
           # Stage dulu agar working tree bersih sebelum pull --rebase
-          git add README.md
+          git add README.generated.md
 
           if git diff --staged --quiet; then
-            echo "Tidak ada perubahan pada README."
+            echo "Tidak ada perubahan pada README.generated.md."
           else
-            git commit -m "docs: auto-generate README at $(date +'%Y-%m-%d %H:%M:%S') WIB"
+            git commit -m "docs: auto-generate README.generated.md at $(date +'%Y-%m-%d %H:%M:%S') WIB"
             # Pull --rebase aman karena perubahan sudah di-commit (tree bersih)
             git pull --rebase origin ${{ github.ref_name }}
             git push origin ${{ github.ref_name }}

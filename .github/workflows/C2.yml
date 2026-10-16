@@ -33,8 +33,8 @@ jobs:
         run: |
           export TZ="Asia/Jakarta"
           TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S %Z")
-          echo "Last updated: $TIMESTAMP" > README.md
-          git add README.md
-          git commit -m "Auto update README at $(date +'%Y-%m-%d %H:%M:%S') WIB" || echo "No changes to commit"
+          echo "Last updated: $TIMESTAMP" > STATUS.md
+          git add STATUS.md
+          git commit -m "Auto update STATUS.md at $(date +'%Y-%m-%d %H:%M:%S') WIB" || echo "No changes to commit"
           git pull --rebase origin ${{ github.ref_name }}
           git push origin ${{ github.ref_name }}

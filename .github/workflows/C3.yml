@@ -156,7 +156,7 @@ jobs:
             echo ""
             echo "---"
             echo "*Last updated: $TIMESTAMP*"
-          } > README.md
+          } > README.generated.md
 
           echo "readme_generated=true" >> $GITHUB_OUTPUT
 
@@ -169,15 +169,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add README.md
+          git add README.generated.md
 
           if git diff --staged --quiet; then
-            echo "No changes to README"
+            echo "No changes to README.generated.md"
           else
             export TZ="Asia/Jakarta"
-            COMMIT_MSG="docs: Auto-generate README at $(date +'%Y-%m-%d %H:%M:%S') WIB"
+            COMMIT_MSG="docs: Auto-generate README.generated.md at $(date +'%Y-%m-%d %H:%M:%S') WIB"
             git commit -m "$COMMIT_MSG"
             git pull --rebase origin ${{ github.ref_name }}
             git push origin ${{ github.ref_name }}
-            echo "README updated!"
+            echo "README.generated.md updated!"
           fi
