@@ -6,11 +6,13 @@ pydantic==2.5.3
 pydantic-settings==2.1.0
 
 # AI & LangChain
-langchain==0.1.4
-langchain-openai==0.0.5
-langchain-anthropic==0.1.1
-langchain-community==0.0.16
-langchain-core==0.1.18
+# Versions kept mutually compatible: langchain 0.1.20 pulls langchain-core 0.1.53,
+# which satisfies langchain-text-splitters 0.0.1 (requires langchain-core>=0.1.28).
+langchain==0.1.20
+langchain-openai==0.0.8
+langchain-anthropic==0.1.4
+langchain-community==0.0.38
+langchain-core==0.1.53
 langchain-text-splitters==0.0.1
 
 # OpenAI & Anthropic
@@ -34,7 +36,6 @@ tenacity==8.2.3
 pytest==7.4.4
 pytest-asyncio==0.23.3
 pytest-cov==4.1.0
-httpx==0.26.0
 
 # Development
 black==24.1.1
